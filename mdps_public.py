@@ -18,7 +18,7 @@ from streamlit_option_menu import option_menu
 
 #loading the saved models
 
-diabetes_model=pickle.load(open('DesDiabetes_model.sav','rb'))
+diabetes_model=pickle.load(open('Diabetes_model.sav','rb'))
 
 breast_cancer=pickle.load(open('Breast_Cancer_model.sav','rb'))
 
