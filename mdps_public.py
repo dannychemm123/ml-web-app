@@ -6,11 +6,7 @@ Created on Tue Nov  8 17:08:31 2022
 """
 
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
 
-This is a temporary script file.
-"""
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
@@ -152,7 +148,7 @@ if (selected =='Breast Cancer Prediction'):
      
      # creating a button for prediction
     if st.button('Breast Cancer Result'):
-         Breast_cancer_prediction=breast_cancer_model.predict([[meanradius,meantexture,meanperimeter,meanarea,
+         Breast_cancer_prediction=breast_cancer.predict([[meanradius,meantexture,meanperimeter,meanarea,
                                                                 meansmoothness,meancompactness,meanconcavity,
                                                                 meanconcavepoints,meansymmetry,meanfractaldimension,
                                                                 radiuserror,textureerror,perimetererror,areaerror,
